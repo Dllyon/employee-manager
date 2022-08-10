@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>Cadastrar Funcionário</h2>
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Nome" formControlName="nome">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="exemplo@email.com" formControlName="email">
+        </div>
+        <div class="mb-3">
+            <label for="cargo" class="form-label">Cargo</label>
+            <input type="text" class="form-control" id="cargo" placeholder="Cargo" formControlName="cargo">
+        </div>
+        <div class="mb-3">
+            <label for="salario" class="form-label">Salário</label>
+            <input type="number" class="form-control" id="salario" placeholder="Salario" formControlName="salario">
+        </div>
+        <div class="mb-3">
+            <label for="foto" class="form-label">Foto</label>
+            <input type="url" class="form-control" id="foto" placeholder="http://image.com/imagem.png" formControlName="foto">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
